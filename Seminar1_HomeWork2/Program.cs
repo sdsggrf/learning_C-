@@ -5,7 +5,7 @@
 // 22 3 9 -> 22
 
 int size = 3;
-int[] arr = new int[3];
+int[] arr = new int[size];
 int index;
 
 index = 0;
@@ -15,16 +15,16 @@ index = 0;
 while (index < size)
 {
     arr[index] = Convert.ToInt32(Console.ReadLine());
-   
-    
-        if (arr[maxPos] > arr[index])
-        {
-        }
-        else
-        {
-            maxPos = index;
-        }
-   
+
+
+    if (arr[maxPos] > arr[index])
+    {
+    }
+    else
+    {
+        maxPos = index;
+    }
+
     index = index + 1;
 }
 Console.WriteLine("Максимальное число: " + arr[maxPos]);
