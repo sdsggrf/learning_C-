@@ -3,7 +3,7 @@
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
-Console.Write("введите 3 числa");
+Console.WriteLine("введите 3 числa");
 int size = 3;
 int[] arr = new int[size];
 int index;
@@ -17,11 +17,10 @@ while (index < size)
     arr[index] = Convert.ToInt32(Console.ReadLine());
 
 
-    if (arr[maxPos] > arr[index])
+    if (arr[maxPos] < arr[index])
     {
-    }
-    else
-    {
+             
+   
         maxPos = index;
     }
 
