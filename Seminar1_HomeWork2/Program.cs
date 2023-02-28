@@ -26,6 +26,7 @@ while (index < size)
     }
 
     index = index + 1;
+    
 }
 Console.WriteLine("Максимальное число: " + arr[maxPos]);
 
