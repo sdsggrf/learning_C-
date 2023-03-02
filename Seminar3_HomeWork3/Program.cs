@@ -18,8 +18,10 @@ int Reverse(int i)
         int remaind;
         i = Math.DivRem(i, 10, out remaind);
         res = res * 10 + remaind;
+       
     }
     return res;
+    
 }
 if(number==number2)Console.WriteLine($"{number2} являеться палиндромом");
 else
