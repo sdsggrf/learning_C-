@@ -22,17 +22,17 @@ int zPointB = Convert.ToInt32(Console.ReadLine());
 
 
 double distance = Distance(xPointA, yPointA, xPointB, yPointB, zPointA, zPointB);
-Console.WriteLine($"Расстояние между точками равно: {Math.Round(distance, 2, MidpointRounding.ToZero) }");
+Console.WriteLine($"Расстояние между точками равно: {Math.Round(distance, 2, MidpointRounding.ToZero)}"); //Округление
 
 double Distance(int xA, int yA, int xB, int yB, int zA, int zB)
 {
-int a = xA-xB;
-int b = yA-yB;
-int c = zA-zB;
+    int a = xA - xB;
+    int b = yA - yB;
+    int c = zA - zB;
 
 
 
-    return Math.Sqrt(a*a+b*b+c*c);
+    return Math.Sqrt(a * a + b * b + c * c);
 }
 /*второй вариант решения
 Задача 21 (branch task_2)
