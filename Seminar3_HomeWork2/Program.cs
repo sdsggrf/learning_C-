@@ -12,9 +12,9 @@
 
 
 int number = Convert.ToInt32(Console.ReadLine());
-table (number);
+Table (number);
 
-void table(int num)
+void Table(int num)
 {
         int index = 1;
     int result = 0;
