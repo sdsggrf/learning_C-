@@ -16,7 +16,7 @@ while (index < size)
 {
     arr[index] = new Random().Next(1, 101);
     Console.Write(arr[index]);
-    index = index + 1;
+    index++;
     if(index<size) Console.Write(",");
 
 }
@@ -25,11 +25,11 @@ void Write(int size, int[] arr, int index){
 Console.Write(" -> ");
 index = 0;
 Console.Write("[");
-while (index < size)
+for (index = 0; index < size; index++) // тоже самое что и "index++"
 {
 
     Console.Write(arr[index]);
-    index = index + 1;
+    index++;
     if(index<size) Console.Write(",");
 
 }
