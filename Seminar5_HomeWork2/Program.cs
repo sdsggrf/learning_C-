@@ -17,11 +17,11 @@
 int siz = 4;
 int[] ar = new int[siz];
 int ind = 0;
-Mass(siz, ar, ind);
+Array(siz, ar, ind);
 Сheiny(siz, ar, ind);
 Write(siz, ar, ind);
 Console.Write(Сheiny(siz, ar, ind));
-void Mass(int size, int[] arr, int index)
+void Array(int size, int[] arr, int index)
 {
     while (index < size)
     {
