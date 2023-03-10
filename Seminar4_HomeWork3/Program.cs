@@ -25,7 +25,7 @@ void Write(int size, int[] arr, int index){
 Console.Write(" -> ");
 index = 0;
 Console.Write("[");
-for (index = 0; index < size; index++) // тоже самое что и "index++"
+while (index < size) // for (int i = 0; i < count; i++) можно через это, в данном коде не работает
 {
 
     Console.Write(arr[index]);
