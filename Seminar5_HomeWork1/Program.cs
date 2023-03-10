@@ -14,7 +14,7 @@ void mass(int size, int[]arr, int index){
     Console.Write("[");
 while (index < size)
 {
-    arr[index] = new Random().Next(1, 101);
+    arr[index] = new Random().Next(100, 1000);
     Console.Write(arr[index]);
     index++;
     if(index<size) Console.Write(",");
