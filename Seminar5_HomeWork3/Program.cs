@@ -8,21 +8,35 @@ int min = 0;
 int max = 0;
 Mass(siz, ar, ind);
 Search(siz, ar, ind, min, max);
+Write(siz, ar, ind);
+Console.WriteLine(Search(siz, ar, ind, min, max));
 
 void Mass(double size, double[] arr, int index)
 {
-    Console.Write("[");
+    
     while (index < size)
     {
         arr[index] = Math.Round(new Random().NextDouble() * 100, 1, MidpointRounding.ToZero);
-        Console.Write(arr[index]);
         index++;
-        if (index < size) Console.Write(". ");
 
     }
-    Console.Write("]");
+    
 }
-void Search(int size, double[] arr, int index, int minPos, int maxPos)
+void Write(int size, double[] arr, int index){
+index = 0;
+Console.Write("[");
+while (index < size) // for (int i = 0; i < count; i++) можно через это, в данном коде не работает
+{
+
+    Console.Write(arr[index]);
+    index++;
+    if(index<size) Console.Write(". ");
+
+}
+Console.Write("]");
+Console.Write(" -> ");
+}
+double Search(int size, double[] arr, int index, int minPos, int maxPos)
 {
 
     while (index < size)
@@ -41,7 +55,7 @@ void Search(int size, double[] arr, int index, int minPos, int maxPos)
         }
         index++;
     }
-    Console.Write(" -> ");
-    Console.Write(Math.Round(arr[maxPos]-arr[minPos], 1, MidpointRounding.ToZero));
     
+    double result= Math.Round(arr[maxPos]-arr[minPos], 1, MidpointRounding.ToZero);
+    return result;
 }
