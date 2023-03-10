@@ -7,10 +7,10 @@
 int siz = 8;
 int[] ar = new int[siz];
 int ind = 0;
-mass(siz, ar, ind);
+Mass(siz, ar, ind);
 Сheiny(siz, ar, ind);
 
-void mass(int size, int[]arr, int index){
+void Mass(int size, int[]arr, int index){
     Console.Write("[");
 while (index < size)
 {
