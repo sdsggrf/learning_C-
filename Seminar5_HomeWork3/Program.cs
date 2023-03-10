@@ -6,12 +6,12 @@ double[] ar = new double[siz];
 int ind = 0;
 int min = 0;
 int max = 0;
-Mass(siz, ar, ind);
-Search(siz, ar, ind, min, max);
+Array(siz, ar, ind);
+Search_Max_Min(siz, ar, ind, min, max);
 Write(siz, ar, ind);
-Console.WriteLine(Search(siz, ar, ind, min, max));
+Console.WriteLine(Search_Max_Min(siz, ar, ind, min, max));
 
-void Mass(double size, double[] arr, int index)
+void Array(double size, double[] arr, int index)
 {
     
     while (index < size)
@@ -36,7 +36,7 @@ while (index < size) // for (int i = 0; i < count; i++) можно через э
 Console.Write("]");
 Console.Write(" -> ");
 }
-double Search(int size, double[] arr, int index, int minPos, int maxPos)
+double Search_Max_Min(int size, double[] arr, int index, int minPos, int maxPos)
 {
 
     while (index < size)
