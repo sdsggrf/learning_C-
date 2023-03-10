@@ -29,12 +29,11 @@ void Write(int size, int[] arr, int index)
     {
         if (index1 < 1)
         {
-           int index2=0;
-            while (index2 < size) // for (int i = 0; i < count; i++) можно через это, в данном коде не работает
+           index=0;
+            while (index < size) // for (int i = 0; i < count; i++) можно через это, в данном коде не работает
             {
 
                 Console.Write(arr[index]);
-                index2++;
                 index++;
                 if (index < size) Console.Write(", ");
 
@@ -45,12 +44,10 @@ void Write(int size, int[] arr, int index)
             Console.Write(" -> ");
             Console.Write("[");
             index=0;
-            int index3=0;
-            while (index3 < size) // while (index3 < size) // for (int i = 0; i < count; i++) можно через это, в данном коде не работает
+            while (index < size) // while (index3 < size) // for (int i = 0; i < count; i++) можно через это, в данном коде не работает
             {
 
                 Console.Write(arr[index]);
-                index3++;
                 index++;
                 if (index < size) Console.Write(", ");
 
