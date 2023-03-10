@@ -14,7 +14,7 @@ void Mass(double size, double[] arr, int index)
     Console.Write("[");
     while (index < size)
     {
-        arr[index] = Math.Round(new Random().NextDouble() * 100, 2, MidpointRounding.ToZero);
+        arr[index] = Math.Round(new Random().NextDouble() * 100, 1, MidpointRounding.ToZero);
         Console.Write(arr[index]);
         index++;
         if (index < size) Console.Write(". ");
@@ -41,6 +41,7 @@ void Search(int size, double[] arr, int index, int minPos, int maxPos)
         }
         index++;
     }
-    Console.Write(Math.Round(arr[maxPos]-arr[minPos], 2, MidpointRounding.ToZero));
+    Console.Write(" -> ");
+    Console.Write(Math.Round(arr[maxPos]-arr[minPos], 1, MidpointRounding.ToZero));
     
 }
