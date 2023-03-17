@@ -3,10 +3,11 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 int size = 4;
 double[] arr = new double[size];
-int num=1;
+int num=0;
 Array(size, arr);
 CheckingArrayElements(arr,num);
-if(CheckingArrayElements(arr,num)>1)Console.WriteLine("Прямые парралельны");
+if(CheckingArrayElements(arr,num)==1)Console.WriteLine("Прямые парралельны");
+else if(CheckingArrayElements(arr,num)==2)Console.WriteLine("Прямые совпадают");
 else
 Main (arr);
 
@@ -23,7 +24,10 @@ void Array(int siz, double[] ar)
 }
 int CheckingArrayElements(double[]ar,int n)
 {
-if(ar[1]==ar[3])n++;
+if(ar[1]==ar[3]){
+  if(ar[0]==ar[2])n++;
+  n++;
+}
 return n;
 }
 
